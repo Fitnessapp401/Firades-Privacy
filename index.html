@@ -1,136 +1,139 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Privacy Policy – Firades</title>
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-      background: #f9f9f9;
-      color: #1a1a1a;
-      line-height: 1.7;
-      padding: 40px 20px;
-    }
-    .container { max-width: 720px; margin: 0 auto; background: #fff; border-radius: 12px; padding: 48px 40px; box-shadow: 0 2px 16px rgba(0,0,0,0.07); }
-    h1 { font-size: 28px; font-weight: 800; margin-bottom: 6px; }
-    .meta { color: #888; font-size: 14px; margin-bottom: 40px; }
-    h2 { font-size: 18px; font-weight: 700; margin: 36px 0 10px; }
-    p { margin-bottom: 14px; color: #333; }
-    ul { margin: 10px 0 14px 22px; color: #333; }
-    ul li { margin-bottom: 6px; }
-    a { color: #2c5ee8; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid #eee; font-size: 13px; color: #999; }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Firades Privacy Policy</title>
+<style>
+  :root { --text: #10201D; --sub: #5F716D; --line: #E3ECEA; --accent: #0E7C70; --bg: #F4F7F6; --card: #FFFFFF; }
+  @media (prefers-color-scheme: dark) { :root { --text: #E8F0EE; --sub: #A9BBB7; --line: #2A3A37; --accent: #5CC7B8; --bg: #0F1917; --card: #16231F; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; }
+  h1 { font-size: 34px; line-height: 1.2; margin: 0 0 6px; }
+  h2 { font-size: 21px; margin: 38px 0 8px; padding-top: 22px; border-top: 1px solid var(--line); }
+  h3 { font-size: 17px; margin: 22px 0 4px; }
+  p, li { color: var(--text); }
+  .meta { color: var(--sub); margin: 0 0 24px; }
+  .box { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 18px 20px; margin: 18px 0; }
+  .box p { margin: 6px 0; }
+  ul { padding-left: 22px; }
+  li { margin: 4px 0; }
+  a { color: var(--accent); }
+  table { width: 100%; border-collapse: collapse; margin: 14px 0; font-size: 16px; }
+  th, td { text-align: left; vertical-align: top; padding: 10px 10px; border-bottom: 1px solid var(--line); }
+  th { color: var(--sub); font-weight: 600; font-size: 14px; }
+  @media (max-width: 560px) { table, thead, tbody, th, td, tr { display: block; } thead { display: none; } td { border: 0; padding: 2px 0; } tr { border-bottom: 1px solid var(--line); padding: 10px 0; } }
+</style>
 </head>
 <body>
-  <div class="container">
-    <h1>Privacy Policy</h1>
-    <p class="meta">App: <strong>Firades</strong> &nbsp;|&nbsp; Last updated: July 1, 2025</p>
+<main>
+  <h1>Firades Privacy Policy</h1>
+  <p class="meta">Last updated: October 13, 2026</p>
 
-    <p>
-      This Privacy Policy explains how Firades ("we", "us", or "our") collects, uses, and protects
-      information when you use the Firades mobile application (the "App"). By using the App you agree
-      to the practices described below.
-    </p>
+  <p>Firades is a training app that builds simple workouts for you and adjusts them as you go. This policy explains what information the app uses, where it goes, and what you can do about it. We have tried to keep it short and plain.</p>
 
-    <h2>1. Information We Collect</h2>
-    <p>We collect two categories of information:</p>
-
-    <p><strong>a) Information you provide</strong></p>
+  <div class="box">
+    <p><strong>In short</strong></p>
     <ul>
-      <li>Fitness preferences and goals you enter during onboarding (e.g. workout type, experience level, available time)</li>
-      <li>Workout and habit data you log inside the App</li>
+      <li>Your name, your answers and your workout history are stored <strong>on your phone</strong>.</li>
+      <li>Your <strong>name is never sent</strong> anywhere.</li>
+      <li>If you turn on <strong>AI coaching</strong> (it asks first, and you can turn it off any time in Settings), your answers and workout feedback are sent to an AI provider so your plan can be adjusted.</li>
+      <li>We keep a <strong>random, anonymous ID</strong> to count how many people use the app. It is not linked to your name or your training.</li>
+      <li>We <strong>do not sell</strong> your data and we do not show ads.</li>
     </ul>
-
-    <p><strong>b) Information collected automatically</strong></p>
-    <ul>
-      <li><strong>Device identifiers</strong> — used by Firebase to distinguish devices (not linked to your real identity)</li>
-      <li><strong>App usage data</strong> — screens visited, features used, session length, crash reports (via Firebase Analytics)</li>
-      <li><strong>Push notification tokens</strong> — generated when you allow notifications, used solely to deliver reminders and updates to your device</li>
-    </ul>
-
-    <p>We do <strong>not</strong> collect your name, email address, payment information, location, contacts, camera, or microphone data.</p>
-
-    <h2>2. How We Use Your Information</h2>
-    <ul>
-      <li>To provide, personalize, and improve the App experience</li>
-      <li>To send push notifications you have opted into (workout reminders, habit nudges)</li>
-      <li>To understand how features are used so we can fix bugs and improve the App</li>
-      <li>To maintain the stability and security of the App</li>
-    </ul>
-    <p>We do <strong>not</strong> sell your data to third parties or use it for advertising targeting.</p>
-
-    <h2>3. Third-Party Services</h2>
-    <p>The App uses the following third-party services that may collect data as described in their own privacy policies:</p>
-    <ul>
-      <li>
-        <strong>Google Firebase</strong> (Analytics, Cloud Messaging) —
-        <a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy</a>
-      </li>
-      <li>
-        <strong>Expo</strong> (push notification infrastructure) —
-        <a href="https://expo.dev/privacy" target="_blank">expo.dev/privacy</a>
-      </li>
-    </ul>
-
-    <h2>4. Data Storage</h2>
-    <p>
-      Your fitness preferences, workout history, and habit data are stored <strong>locally on your device</strong>
-      using secure on-device storage. This data does not leave your device unless you explicitly share it.
-    </p>
-    <p>
-      Analytics and crash data collected by Firebase are stored on Google's servers in accordance with
-      Google's data retention policies.
-    </p>
-
-    <h2>5. Push Notifications</h2>
-    <p>
-      If you allow notifications, we send workout reminders and habit nudges to your device.
-      You can disable notifications at any time in your device's Settings app. Disabling notifications
-      does not affect your ability to use any other part of the App.
-    </p>
-
-    <h2>6. Children's Privacy</h2>
-    <p>
-      Firades is not directed at children under the age of 13. We do not knowingly collect personal
-      information from children under 13. If you believe a child has provided us with personal
-      information, please contact us and we will delete it.
-    </p>
-
-    <h2>7. Your Rights</h2>
-    <p>Depending on your location, you may have the right to:</p>
-    <ul>
-      <li>Access the personal data we hold about you</li>
-      <li>Request deletion of your data</li>
-      <li>Opt out of analytics data collection (you can reset your device's advertising identifier in your device settings)</li>
-    </ul>
-    <p>To exercise any of these rights, contact us at the address below.</p>
-
-    <h2>8. Data Retention</h2>
-    <p>
-      On-device data is retained until you delete the App. Firebase Analytics data is retained for
-      14 months by default, after which it is automatically deleted.
-    </p>
-
-    <h2>9. Changes to This Policy</h2>
-    <p>
-      We may update this Privacy Policy from time to time. When we do, we will update the
-      "Last updated" date at the top of this page. Continued use of the App after changes
-      constitutes acceptance of the updated policy.
-    </p>
-
-    <h2>10. Contact Us</h2>
-    <p>
-      If you have questions or requests regarding this Privacy Policy, please contact us at:<br />
-      <a href="mailto:repquest.project@gmail.com">repquest.project@gmail.com</a>
-    </p>
-
-    <div class="footer">
-      &copy; 2025 Firades. All rights reserved.
-    </div>
   </div>
+
+  <h2>1. Who we are</h2>
+  <p>Firades is made by an independent developer. For anything in this policy, write to <a href="mailto:repquest.project@gmail.com">repquest.project@gmail.com</a>.</p>
+
+  <h2>2. What we use</h2>
+
+  <h3>Stored on your phone only</h3>
+  <ul>
+    <li><strong>Your name</strong>, if you enter one. It is used to greet you in the app and is never sent to us or anyone else.</li>
+    <li><strong>Your answers</strong> from setup: goal, experience, equipment, how many days you want to train, and which exercises you like or want to avoid.</li>
+    <li><strong>Pain or injuries</strong>, if you tell the app about them. This is health information. Giving it is optional, and it is used only to pick safer exercises.</li>
+    <li><strong>Your workout history</strong>: which sessions, walks and stretches you did, when, for how long, which exercises and how many sets, and your answers to the questions after a workout (how it felt, whether anything hurt).</li>
+    <li><strong>Your strength test results</strong> and settings such as your reminder time.</li>
+    <li>If you choose a <strong>profile picture</strong>, it stays on your phone and is never uploaded.</li>
+  </ul>
+  <p>This information is not sent to us unless you use AI coaching (see section 3). When you delete the app, or choose <em>Reset all progress</em> in Settings, it is removed from your phone.</p>
+
+  <h3>Sent to us automatically</h3>
+  <ul>
+    <li><strong>An anonymous ID.</strong> The app creates a random ID on your phone. It is not your name and cannot be traced to you by us. We store the ID with the time you last opened the app, and we keep one app-wide counter of total sessions. We use this to see roughly how many people use Firades. IDs of people who have not opened the app for 14 months are deleted automatically.</li>
+    <li><strong>For AI requests only:</strong> the same random ID and your IP address reach our server, so we can apply a daily limit per device and per network and prevent misuse. These counters are kept for about two days.</li>
+  </ul>
+  <p>We do not use advertising IDs, we do not track you across other apps or websites, and the app does not collect your location, contacts, camera or microphone.</p>
+
+  <h2>3. AI coaching</h2>
+  <p>Firades can use an AI model to build your plan, adjust it after a workout, change today's session, and answer questions in the coach chat. This only happens if you say yes. The app asks during setup, and you can turn it off at any time under <em>Settings → Adjust my plan with AI</em>. When it is off, the app uses simple built-in rules and sends nothing.</p>
+
+  <h3>What is sent when it is on</h3>
+  <ul>
+    <li>Your goal, experience level, equipment, number of training days and exercises to avoid.</li>
+    <li>Any pain or injury areas you have told the app about.</li>
+    <li>Today's session and the exercises in your plan.</li>
+    <li>Your answers after a workout, including what hurt and any note you write yourself.</li>
+    <li>What you type in the coach chat or in the free-text box when you ask to change a session.</li>
+    <li>An anonymous device ID (section 2) so the daily limit works.</li>
+  </ul>
+  <p><strong>Never sent:</strong> your name, your profile picture, or any contact details. Please do not write personal details such as your name, address or phone number in free-text boxes or in the chat.</p>
+
+  <h3>Who processes it</h3>
+  <p>Requests go through our own server, hosted by Vercel, to <strong>Anthropic</strong>, which provides the AI model. Anthropic processes the request on our behalf to produce an answer. Its handling of data is described in its own policy: <a href="https://www.anthropic.com/legal/privacy">anthropic.com/legal/privacy</a>. We do not store your AI requests or the answers on our server after the request is complete. Our server logs only technical usage numbers (such as the size of a request).</p>
+
+  <h3>What it can and cannot do</h3>
+  <p>The AI gives general training suggestions. It is not a doctor or a physiotherapist and it does not give medical advice. If something hurts, stop and speak to a healthcare professional.</p>
+
+  <h2>4. Notifications</h2>
+  <p>If you turn on training reminders, the app asks for permission and schedules notifications <strong>on your phone</strong>, at the time you choose, on your training days. They do not come from our servers and no notification token is collected. You can turn reminders off in Settings or in your phone's settings.</p>
+
+  <h2>5. Who else is involved</h2>
+  <table>
+    <thead><tr><th>Service</th><th>What for</th><th>What it can see</th></tr></thead>
+    <tbody>
+      <tr><td>Anthropic</td><td>The AI model</td><td>The AI information in section 3, only if AI coaching is on</td></tr>
+      <tr><td>Vercel</td><td>Hosts our server that connects the app to the AI</td><td>The AI requests as they pass through, and your IP address</td></tr>
+      <tr><td>Upstash (Redis)</td><td>Short-lived daily counters to prevent misuse</td><td>The anonymous ID and IP address, for about two days</td></tr>
+      <tr><td>Google (Firebase Firestore)</td><td>Counting how many people use the app</td><td>The anonymous ID, the last time you opened the app, and an app-wide counter</td></tr>
+    </tbody>
+  </table>
+  <p>These providers may process data outside your own country, including in the United States. We do not sell your information and we do not share it for advertising.</p>
+
+  <h2>6. Why we are allowed to use it</h2>
+  <ul>
+    <li><strong>Your consent</strong> for AI coaching and for the health information you choose to give. You can withdraw it at any time by turning off AI coaching in Settings or by resetting your progress.</li>
+    <li><strong>Our legitimate interest</strong> in running the app, preventing misuse and counting anonymous usage.</li>
+  </ul>
+
+  <h2>7. How long we keep it</h2>
+  <ul>
+    <li>On your phone: until you delete it, reset your progress or remove the app.</li>
+    <li>Anonymous ID and last-opened time: deleted automatically after 14 months without use.</li>
+    <li>Daily limit counters: about two days.</li>
+  </ul>
+
+  <h2>8. Your choices and rights</h2>
+  <ul>
+    <li><strong>Turn off AI coaching</strong> any time in Settings.</li>
+    <li><strong>Delete your data on your phone</strong> with <em>Settings → Reset all progress</em>, or by removing the app.</li>
+    <li><strong>Ask us</strong> to delete the anonymous ID we hold. Because it is random and has no name, we cannot find it unless you can tell us the ID; the app does not show it, so in practice it is deleted by the 14-month rule. Write to the address below if you want us to try.</li>
+    <li>Depending on where you live, you may have the right to access, correct or delete personal information, to object to certain uses, and to complain to your local data protection authority. We will answer requests as soon as we can.</li>
+  </ul>
+
+  <h2>9. Children</h2>
+  <p>Firades is not made for children under 13 and we do not knowingly collect information from them. If you are under the age at which your country lets you agree to this kind of service on your own, ask a parent or guardian first. If we learn that a child under 13 has used the app, we will delete what we hold.</p>
+
+  <h2>10. Security</h2>
+  <p>AI requests are sent over an encrypted connection. Information stored on your phone is protected by your phone's own security, so please use a screen lock.</p>
+
+  <h2>11. Changes</h2>
+  <p>If we change this policy in a way that matters, for example by sending new kinds of information, we will update the date at the top and, where needed, ask for your permission again in the app.</p>
+
+  <h2>12. Contact</h2>
+  <p>Questions or requests: <a href="mailto:repquest.project@gmail.com">repquest.project@gmail.com</a></p>
+</main>
 </body>
 </html>

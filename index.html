@@ -29,7 +29,7 @@
 <body>
 <main>
   <h1>Destination Health Privacy Policy</h1>
-  <p class="meta">Last updated: October 15, 2026</p>
+  <p class="meta">Last updated: October 19, 2026</p>
 
   <p>Destination Health is a training app that builds simple workouts for you and adjusts them as you go. This policy explains what information the app uses, where it goes, and what you can do about it. We have tried to keep it short and plain.</p>
 
@@ -39,7 +39,7 @@
       <li>Your name, your answers and your workout history are stored <strong>on your phone</strong>.</li>
       <li>Your <strong>name is never sent</strong> anywhere.</li>
       <li>If you turn on <strong>AI coaching</strong> (it asks first, and you can turn it off any time in Settings), your answers and workout feedback are sent to an AI provider so your plan can be adjusted.</li>
-      <li>We keep a <strong>random, anonymous ID</strong> to count how many people use the app. It is not linked to your name or your training.</li>
+      <li>We keep <strong>one app-wide counter</strong> of how often the app is opened. Nothing in it is about you.</li>
       <li>We <strong>do not sell</strong> your data and we do not show ads.</li>
     </ul>
   </div>
@@ -61,8 +61,8 @@
 
   <h3>Sent to us automatically</h3>
   <ul>
-    <li><strong>An anonymous ID.</strong> The app creates a random ID on your phone. It is not your name and cannot be traced to you by us. We store the ID with the time you last opened the app, and we keep one app-wide counter of total sessions. We use this to see roughly how many people use Destination Health. IDs of people who have not opened the app for 14 months are deleted automatically.</li>
-    <li><strong>For AI requests only:</strong> the same random ID and your IP address reach our server, so we can apply a daily limit per device and per network and prevent misuse. These counters are kept for about two days.</li>
+    <li><strong>One app-wide counter.</strong> Each time the app is opened, one shared counter goes up by one. Nothing that identifies you or your phone is stored with it. We use it to see roughly how much Destination Health is used.</li>
+    <li><strong>For AI requests only:</strong> a random ID that the app creates on your phone, and your IP address, reach our server so we can apply a daily limit per device and per network and prevent misuse. The ID is not your name and cannot be traced to you by us. These counters are kept for about two days.</li>
   </ul>
   <p>We do not use advertising IDs, we do not track you across other apps or websites, and the app does not collect your location, contacts, camera or microphone.</p>
 
@@ -76,7 +76,7 @@
     <li>Today's session and the exercises in your plan.</li>
     <li>Your answers after a workout, including what hurt and any note you write yourself.</li>
     <li>What you type in the coach chat or in the free-text box when you ask to change a session.</li>
-    <li>An anonymous device ID (section 2) so the daily limit works.</li>
+    <li>The random device ID (section 2) so the daily limit works.</li>
   </ul>
   <p><strong>Never sent:</strong> your name or any contact details. Please do not write personal details such as your name, address or phone number in free-text boxes or in the chat.</p>
 
@@ -95,8 +95,8 @@
     <tbody>
       <tr><td>Anthropic</td><td>The AI model</td><td>The AI information in section 3, only if AI coaching is on</td></tr>
       <tr><td>Vercel</td><td>Hosts our server that connects the app to the AI</td><td>The AI requests as they pass through, and your IP address</td></tr>
-      <tr><td>Upstash (Redis)</td><td>Short-lived daily counters to prevent misuse</td><td>The anonymous ID and IP address, for about two days</td></tr>
-      <tr><td>Google (Firebase Firestore)</td><td>Counting how many people use the app</td><td>The anonymous ID, the last time you opened the app, and an app-wide counter</td></tr>
+      <tr><td>Upstash (Redis)</td><td>Short-lived daily counters to prevent misuse</td><td>The random device ID and IP address, for about two days, only for AI requests</td></tr>
+      <tr><td>Google (Firebase Firestore)</td><td>Storing the app-wide counter</td><td>The counter only. When the app adds to it, Google can see your IP address as part of the connection, but we store nothing about you</td></tr>
     </tbody>
   </table>
   <p>These providers may process data outside your own country, including in the United States. We do not sell your information and we do not share it for advertising.</p>
@@ -104,21 +104,21 @@
   <h2>6. Why we are allowed to use it</h2>
   <ul>
     <li><strong>Your consent</strong> for AI coaching and for the health information you choose to give. You can withdraw it at any time by turning off AI coaching in Settings or by resetting your progress.</li>
-    <li><strong>Our legitimate interest</strong> in running the app, preventing misuse and counting anonymous usage.</li>
+    <li><strong>Our legitimate interest</strong> in running the app, preventing misuse and counting how much the app is used.</li>
   </ul>
 
   <h2>7. How long we keep it</h2>
   <ul>
     <li>On your phone: until you delete it, reset your progress or remove the app.</li>
-    <li>Anonymous ID and last-opened time: deleted automatically after 14 months without use.</li>
-    <li>Daily limit counters: about two days.</li>
+    <li>Daily limit counters for AI requests: about two days.</li>
+    <li>The app-wide counter has nothing about you in it, so there is nothing to delete.</li>
   </ul>
 
   <h2>8. Your choices and rights</h2>
   <ul>
     <li><strong>Turn off AI coaching</strong> any time in Settings.</li>
     <li><strong>Delete your data on your phone</strong> with <em>Settings → Reset all progress</em>, or by removing the app.</li>
-    <li><strong>Ask us</strong> to delete the anonymous ID we hold. Because it is random and has no name, we cannot find it unless you can tell us the ID; the app does not show it, so in practice it is deleted by the 14-month rule. Write to the address below if you want us to try.</li>
+    <li>We do not keep a lasting record about you on our side. The only per-device information, used for the AI daily limit, is gone after about two days.</li>
     <li>Depending on where you live, you may have the right to access, correct or delete personal information, to object to certain uses, and to complain to your local data protection authority. We will answer requests as soon as we can.</li>
   </ul>
 
